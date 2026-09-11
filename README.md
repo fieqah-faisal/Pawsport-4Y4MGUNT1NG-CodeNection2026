@@ -1,4 +1,4 @@
-# Pawsport by 4Y4M GUNT1NG
+# PAWsport by 4Y4M GUNT1NG
 
 > [One-sentence value proposition: what changes for the user?]
 
