@@ -3,15 +3,16 @@
 > Plan a group trip by talking, not typing - an AI companion that learns your group from how they already share, and turns it into a journey everyone had a say in.
 
 **Team:** 4Y4M GUNT1NG - Aida Batrisya Binti Ramlee & Syafieqah Binti Ahmad Shukri
+
 **University:** Asia Pacific University of Technology & Innovation 
+
 **Problem Statement:** Planning an Escape - Travel Planner
 
 ## Submission Links
 
 - **Video Presentation:** [Unlisted YouTube link]
-- **Presentation Slides:** [Public slides link]
-- **Interactive Prototype:** [Public Figma link](FIGMA_PUBLIC_LINK)
-- **Published Ideation Mindmap:** 
+- **Prototype:** https://github.com/fieqah-faisal/Pawsport-4Y4MGUNT1NG-CodeNection2026/tree/main/docs/prototype
+- **Ideation Mindmap:** https://github.com/fieqah-faisal/Pawsport-4Y4MGUNT1NG-CodeNection2026/tree/main/docs/ideation
 
 ---
 
@@ -360,18 +361,6 @@ Both members contributed to the initial ideation, mentor consultation, scope dec
 
 ---
 
-## 8. Project Assets and Credits
-
-- Character/illustration assets: [Creator, asset pack and licence]
-- Icons: [Source and licence]
-- Map/environment assets: [Source and licence]
-- Fonts: [Source and licence]
-- Other libraries/resources: [Source and licence]
-
-Full details: [Asset credits](docs/assets/CREDITS.md)
-
----
-
 ## Repository Structure
 
 ```text
@@ -395,9 +384,5 @@ project-root/
 │   │   └── screen-09-ai-compromise.png
 │   ├── architecture/
 │   │   └── system-architecture.png
-│   └── assets/
-│       └── CREDITS.md
-├── presentation/
-│   └── slides.pdf
 └── [android-app and backend folders added during the building phase]
 ```
