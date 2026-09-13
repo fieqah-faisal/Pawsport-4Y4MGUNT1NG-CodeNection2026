@@ -103,7 +103,7 @@ PAWsport is an Android travel planner built around an AI companion that learns a
 
 #### Iteration 1 - Pre-Mentor Mindmap
 
-![Pre-mentor product mindmap](docs/ideation/mindmap-v1-pre-mentor.png)
+docs/ideation/mindmap-v1-preMentor.png
 
 This is the raw output of our first ideation meeting, covering audience, features, technology options and open questions in a single map, and it is reproduced exactly as our mentor saw it on 10 September — deliberately not tidied. Its density is the reason he told us it carried "too much stuff," and it is the direct cause of the narrower second map below.
 
