@@ -1,6 +1,6 @@
 # PAWsport by 4Y4M GUNT1NG
 
-> Plan a group trip by talking, not typing — an AI companion that learns your group from how they already share, and turns it into a journey everyone had a say in.
+> Plan a group trip by talking, not typing - an AI companion that learns your group from how they already share, and turns it into a journey everyone had a say in.
 
 **Team:** 4Y4M GUNT1NG - Aida Batrisya Binti Ramlee & Syafieqah Binti Ahmad Shukri
 **University:** Asia Pacific University of Technology & Innovation 
@@ -11,7 +11,7 @@
 - **Video Presentation:** [Unlisted YouTube link]
 - **Presentation Slides:** [Public slides link]
 - **Interactive Prototype:** [Public Figma link](FIGMA_PUBLIC_LINK)
-- **Published Ideation Mindmap:** https://app.mindmup.com/map/?id=59e323e8-069b-45b5-b80d-059c9a0128d4
+- **Published Ideation Mindmap:** 
 
 ---
 
@@ -27,13 +27,13 @@ Planning a group trip means stitching together tools that were never built to wo
 
 **Other stakeholders:**
 
-- **Trip organisers** — the one or two members who absorb the coordination work today
-- **Trip followers** — everyone else in the group, who holds opinions but has no low-effort way to register them
-- **Parents and guardians** — relevant given the lower end of our age range
-- **Local businesses** — restaurants, cafés and activity operators reached through recommendations
+- **Trip organisers** - the one or two members who absorb the coordination work today
+- **Trip followers** - everyone else in the group, who holds opinions but has no low-effort way to register them
+- **Parents and guardians** - relevant given the lower end of our age range
+- **Local businesses** - restaurants, cafés and activity operators reached through recommendations
 - **Accommodation and transport providers**
-- **Tourism boards and local authorities** — crowd-aware scheduling distributes visitors away from congested sites
-- **Emergency services and overseas missions** — reached through offline emergency information
+- **Tourism boards and local authorities** - crowd-aware scheduling distributes visitors away from congested sites
+- **Emergency services and overseas missions** - reached through offline emergency information
 - **Platform administrators**
 
 ### Existing Solutions and Their Gaps
@@ -105,9 +105,7 @@ PAWsport is an Android travel planner built around an AI companion that learns a
 
 <img width="3445" height="1839" alt="image" src="https://github.com/user-attachments/assets/ca4f4ad8-bc6a-43c0-a1f4-25b39f94b179" />
 
-This is the raw output of our first ideation meeting, covering audience, features, technology options and open questions in a single map, and it is reproduced exactly as our mentor saw it on 10 September — deliberately not tidied. Its density is the reason he told us it carried "too much stuff," and it is the direct cause of the narrower second map below.
-
-[Open the interactive published mindmap](https://atlas.mindmup.com/ay4m-gunt1ng-codenection-pzn2of/)
+This is the raw output of our first ideation meeting, covering audience, features, technology options and open questions in a single map, and it is reproduced exactly as our mentor saw it on 10 September — deliberately not tidied. 
 
 #### Problem Tree
 
@@ -123,13 +121,11 @@ The primary journey runs from opening the app through the solo-or-group decision
 
 #### Iteration 2 - Post-Mentor Refinement
 
-![Post-mentor product mindmap](docs/ideation/mindmap-v2-post-mentor.png)
+[Post-mentor product mindmap](docs/ideation/pawsport-mindmap-v2.png)
 
-Three substantive changes separate this map from the first. Spoken capture appears as a new node connecting the AI companion, the character system and the Gemini audio pipeline — the companion is now the microphone, which makes the character functional rather than decorative. Group handling moved from merging preferences to lowering the cost of contributing, following the observation that only one or two members of any group actually plan. And the map is now split by commitment level, separating the three-week MVP from stretch features, in direct response to the density critique of the first version.
+Three changes separate this map from the first. Spoken capture enters as a new branch, cross-linked to Travel DNA, the character system and the Gemini audio pipeline — the companion is now the microphone, which makes the character functional rather than decorative. Group handling moved from merging everyone's preferences to lowering the cost of contributing, following the observation that only one or two members of any group actually plan. And the content is now grouped and colour-coded — committed MVP, known risk, and a Dropped branch that keeps rejected directions visible rather than silently absent — which answers the density critique by making the shape legible rather than by deleting work.
 
 ### 2.3 Idea Evolution
-
-     The column says "What changed", not "What we plan to change". -->
 
 | Before feedback | Feedback or learning | What changed | Why it improved the concept |
 |---|---|---|---|
@@ -157,7 +153,7 @@ He also noted that he had given the same advice about data collection to several
 
 Feedback we adopted only in part, and why:
 
-> The suggestion was to do *everything* in one large conversational chat. We adopted the conversational capture but kept structured Quest Cards and group voting rather than moving the entire experience into a chat thread. A pure chat interface makes it harder, not easier, for the quieter members of a group to register an opinion — a single tap on a card is lower-effort than composing a message, and it leaves a visible record of who actually weighed in. Since the mentor's central concern was that non-planners never get a final say, we judged that keeping a tappable surface served that concern better than a chat-only interface would have.
+> The suggestion was to do *everything* in one large conversational chat. We adopted the conversational capture but kept structured Quest Cards and group voting rather than moving the entire experience into a chat thread. A pure chat interface makes it harder, not easier, for the quieter members of a group to register an opinion - a single tap on a card is lower-effort than composing a message, and it leaves a visible record of who actually weighed in. Since the mentor's central concern was that non-planners never get a final say, we judged that keeping a tappable surface served that concern better than a chat-only interface would have.
 
 ---
 
@@ -219,7 +215,7 @@ The Party Lobby makes group alignment visible at a glance: who is ready, which i
 
 ### Our Defining Twist
 
-An AI itinerary generator takes a form and returns a list. PAWsport does something structurally different: it learns a *group* rather than a user, and it learns them from behaviour they already have — talking, and pasting links — rather than from answers they have to compose. That matters because the real failure in group travel is not disagreement, it is non-participation: one or two people plan while everyone else follows, and the followers' preferences never reach the plan because registering them costs more effort than staying quiet. Our agent lowers that cost to a single tap, then mediates rather than decides — it calls structured tools for places, weather, preferences and budget, shows the reasoning and the trade-off behind each compromise, and writes nothing to the itinerary until a member confirms it. The result is a plan that keeps working after it meets reality, because when a closure or a delay breaks one stop, only that stop is reconsidered and the rest of the trip stands.
+An AI itinerary generator takes a form and returns a list. PAWsport does something structurally different: it learns a *group* rather than a user, and it learns them from behaviour they already have - talking, and pasting links - rather than from answers they have to compose. That matters because the real failure in group travel is not disagreement, it is non-participation: one or two people plan while everyone else follows, and the followers' preferences never reach the plan because registering them costs more effort than staying quiet. Our agent lowers that cost to a single tap, then mediates rather than decides - it calls structured tools for places, weather, preferences and budget, shows the reasoning and the trade-off behind each compromise, and writes nothing to the itinerary until a member confirms it. The result is a plan that keeps working after it meets reality, because when a closure or a delay breaks one stop, only that stop is reconsidered and the rest of the trip stands.
 
 | Capability | Typical planning experience | PAWsport |
 |---|---|---|
@@ -306,7 +302,7 @@ The Kotlin client authenticates through Firebase Authentication and accesses mem
 - User confirmation and Firestore synchronisation.
 - Nearby washroom and food finders using OpenRouteService isochrones and Overpass amenity data.
 - Crowd-aware scheduling from cached foot-traffic forecasts.
-- Offline emergency information from a curated static dataset — embassy address in local script, insurance details and nearest hospital.
+- Offline emergency information from a curated static dataset - embassy address in local script, insurance details and nearest hospital.
 
 #### Stretch Features
 
@@ -357,8 +353,8 @@ The Kotlin client authenticates through Firebase Authentication and accesses mem
 
 | Member | Primary responsibility |
 |---|---|
-| [Fieqah's full name] | Prototype design, character experience, architecture and visual consistency |
-| [Aida's full name] | Research, ideation documentation, README, slides and submission assembly |
+| Syafieqah Binti Ahmad Shukri | Prototype design, character experience, architecture and visual consistency |
+| Aida Batrisya Binti Ramlee | Research, ideation documentation, README, slides and submission assembly |
 
 Both members contributed to the initial ideation, mentor consultation, scope decisions and final presentation.
 
