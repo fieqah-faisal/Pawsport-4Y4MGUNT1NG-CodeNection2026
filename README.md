@@ -10,7 +10,7 @@
 
 - **Video Presentation:** [Unlisted YouTube link]
 - **Presentation Slides:** [Public slides link]
-- **Interactive Prototype:** [Public Figma link]
+- **Interactive Prototype:** [Public Figma link](FIGMA_PUBLIC_LINK)
 - **Published Ideation Mindmap:** https://app.mindmup.com/map/?id=59e323e8-069b-45b5-b80d-059c9a0128d4
 
 ---
@@ -165,64 +165,53 @@ Feedback we adopted only in part, and why:
 
 ### Interactive Prototype
 
-**[Open the public Figma prototype](FIGMA_PUBLIC_LINK)**
+**[Open the interactive PAWsport prototype](FIGMA_PUBLIC_LINK)**
 
-The prototype demonstrates [brief description of the complete scenario and sample trip]. It represents the proposed experience for the building phase; integrations that are not yet functional are clearly identified as planned.
+The current prototype follows a three-day Penang group trip. It demonstrates the core PAWsport experience: choosing a trip type, describing the trip through a voice-first AI consultation, reviewing what the companion understood, confirming a Travel DNA profile, exploring the itinerary as an illustrated route, and resolving group-planning conflicts through an explainable AI compromise. The voice capture and AI responses are simulated prototype interactions; backend integrations are planned for the implementation phase.
 
-### Key Screen 1 - Welcome and Trip Type
+### Prototype Walkthrough
 
-![Welcome screen](docs/prototype/screen-01-welcome.png)
+#### 1. Start the Journey
 
-[Explain what the user selects and where the interaction leads.]
+| Trip entry | AI listening | Transcript review |
+|---|---|---|
+| <img src="docs/prototype/screen-01-trip-entry.png" width="250" alt="PAWsport trip entry screen with options to join, plan solo or create a group trip"> | <img src="docs/prototype/screen-02-ai-listening.png" width="250" alt="AI Travel Buddy listening to a spoken trip description"> | <img src="docs/prototype/screen-03-ai-transcript-review.png" width="250" alt="AI Travel Buddy transcript review with extracted trip details"> |
 
-### Key Screen 2 - AI Travel Consultation
+The entry screen lets a traveller join an existing group, plan alone or create a new group trip. The AI Travel Buddy then makes voice the primary input: the user can speak naturally about destination, duration, party size, budget and interests, while manual typing remains available. After listening, the companion returns both a readable transcript and structured chips so the user can confirm or edit what it understood before anything is used for planning.
 
-![AI consultation](docs/prototype/screen-02-ai-consultation.png)
+#### 2. Refine the Travel DNA
 
-[Explain how the companion collects destination, dates, budget and interests conversationally.]
+| Preference follow-up | Travel DNA ready |
+|---|---|
+| <img src="docs/prototype/screen-04-ai-follow-up.png" width="250" alt="AI Travel Buddy asking what the group wants to avoid"> | <img src="docs/prototype/screen-05-travel-dna-ready.png" width="250" alt="Confirmation that the traveller's Travel DNA is ready"> |
 
-### Key Screen 3 - Travel DNA and Character
+Instead of presenting a long questionnaire, the companion asks one focused follow-up about constraints such as crowds, long walks, expensive activities or early mornings. The user can answer with one tap, by voice or by typing. A clear confirmation state then shows that the Travel DNA is ready and will be used to shape the Penang itinerary.
 
-![Travel DNA](docs/prototype/screen-03-travel-dna.png)
+#### 3. Explore the Adventure
 
-[Explain the traveller profile and editable preferences.]
+| Adventure map | Destination details |
+|---|---|
+| <img src="docs/prototype/screen-06-adventure-map.png" width="250" alt="Illustrated Penang adventure map with five itinerary stops"> | <img src="docs/prototype/screen-07-destination-details.png" width="250" alt="Adventure map with the Chew Jetty destination detail card open"> |
 
-### Key Screen 4 - Party Compatibility
+The approved itinerary becomes a playful illustrated journey instead of a dense schedule. Numbered nodes communicate progress through the day, while the header keeps weather and remaining budget visible. Tapping a node opens its time, destination, activity, cost, duration and category without cluttering the route; the traveller can then open the full plan when more detail is needed.
 
-![Party compatibility](docs/prototype/screen-04-party-compatibility.png)
+#### 4. Balance the Party
 
-[Explain how agreements, differences and conflicts are displayed.]
+| Party lobby | AI compromise |
+|---|---|
+| <img src="docs/prototype/screen-08-party-lobby.png" width="250" alt="Party lobby showing travellers, preference overlap, budget differences and unresolved choices"> | <img src="docs/prototype/screen-09-ai-compromise.png" width="250" alt="AI compromise proposal balancing group preferences and budget"> |
 
-### Key Screen 5 - Adventure Board
-
-![Adventure Board](docs/prototype/screen-05-adventure-board.png)
-
-[Explain Quest Cards, sources, estimated costs and voting.]
-
-### Key Screen 6 - Agent Recommendation
-
-![Agent recommendation](docs/prototype/screen-06-agent-recommendation.png)
-
-[Explain how the agent compares preferences and justifies compromises before approval.]
-
-### Key Screen 7 - Adventure Map
-
-![Adventure map](docs/prototype/screen-07-adventure-map.png)
-
-[Explain day/activity nodes, route, budget status and optional side quests.]
-
-### Key Screen 8 - Dynamic Replanning
-
-![Dynamic replanning](docs/prototype/screen-08-dynamic-replanning.png)
-
-[Explain the disruption, proposed replacement, cost/time difference and confirmation step.]
+The Party Lobby makes group alignment visible at a glance: who is ready, which interests overlap, how individual budgets compare and which choices still need attention. When asked to help, the companion proposes a compromise and explains why it works. Members can accept it, send it to a group vote or adjust it, preserving human control over the final itinerary.
 
 ### Design Decisions and Accessibility
 
-- [Explain the visual theme and how it supports the adventure concept.]
-- [Explain how the AI companion remains present without obstructing planning.]
-- [Mention colour contrast, readable text, labelled icons and non-colour status indicators.]
-- [Mention how important actions require clear confirmation.]
+- **Adventure-first visual language:** The illustrated route, block-style Penang scenery and level-like destination nodes turn itinerary progress into a journey while keeping time, cost and status understandable.
+- **Voice first, not voice only:** The large microphone reduces the effort of explaining a trip, while `Type your answer`, `Edit` and quick-select chips support noisy environments, privacy needs and users who prefer text.
+- **A focused AI identity:** The simple animated blob appears on consultation states as a friendly interface cue rather than a decorative mascot competing with the planning content.
+- **Progressive disclosure:** Destination details appear only after a node is selected, and the companion asks one follow-up at a time. This keeps the mobile interface readable and avoids overwhelming users with a full form or itinerary.
+- **Status is not communicated by colour alone:** Labels such as `Ready`, `Reviewing`, `I'm listening`, vote counts, initials, checkmarks and numbered nodes reinforce every colour-coded state.
+- **Human confirmation remains explicit:** Users review the transcript before creating their Travel DNA and can accept, vote on or adjust an AI compromise before it changes the group plan.
+- **Mobile-friendly interaction:** Large rounded controls, short labels, fixed navigation and contained cards are designed for comfortable touch use in a narrow mobile viewport.
 
 ---
 
@@ -399,14 +388,15 @@ project-root/
 │   │   ├── problem-tree.png
 │   │   └── user-flow.png
 │   ├── prototype/
-│   │   ├── screen-01-welcome.png
-│   │   ├── screen-02-ai-consultation.png
-│   │   ├── screen-03-travel-dna.png
-│   │   ├── screen-04-party-compatibility.png
-│   │   ├── screen-05-adventure-board.png
-│   │   ├── screen-06-agent-recommendation.png
-│   │   ├── screen-07-adventure-map.png
-│   │   └── screen-08-dynamic-replanning.png
+│   │   ├── screen-01-trip-entry.png
+│   │   ├── screen-02-ai-listening.png
+│   │   ├── screen-03-ai-transcript-review.png
+│   │   ├── screen-04-ai-follow-up.png
+│   │   ├── screen-05-travel-dna-ready.png
+│   │   ├── screen-06-adventure-map.png
+│   │   ├── screen-07-destination-details.png
+│   │   ├── screen-08-party-lobby.png
+│   │   └── screen-09-ai-compromise.png
 │   ├── architecture/
 │   │   └── system-architecture.png
 │   ├── research/
