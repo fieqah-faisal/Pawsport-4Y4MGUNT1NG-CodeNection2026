@@ -243,7 +243,7 @@ The companion is designed to use permitted tools instead of relying only on mode
 
 ### System Architecture
 
-![System architecture](docs/architecture/system-architecture.png)
+<img width="847" height="722" alt="PAWSportArchitectureDiagram drawio" src="https://github.com/user-attachments/assets/e950cdb3-5745-4d8b-9a4f-057a1d8abefb" />
 
 The Kotlin client authenticates through Firebase Authentication and accesses member-scoped trip data in Firestore. Voice captured with Android `MediaRecorder` follows the Firebase AI Logic path to Gemini for structured speech extraction, while authenticated planning requests are handled by the Cloud Functions Genkit endpoint. Genkit loads the trip and group context, asks Gemini to reason over it and invokes only permitted tools for preferences, budgets, places, weather, nearby amenities and crowd levels. The resulting recommendation returns to the app for review; only an explicit accept or group-vote decision unlocks `updateItinerary`, after which Firestore synchronises the approved change to the group. Backend credentials remain outside the mobile client, budget calculations stay deterministic, and controlled or cached data provides a fallback when a live provider is unavailable.
 
