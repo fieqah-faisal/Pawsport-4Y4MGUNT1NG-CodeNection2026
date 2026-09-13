@@ -10,7 +10,7 @@
 
 ## Submission Links
 
-- **Video Presentation:** [Unlisted YouTube link]
+- **Video Presentation:** https://youtu.be/Tu4q4ab6vNk?si=qU2imf6asdEa4bbu
 - **Prototype:** https://github.com/fieqah-faisal/Pawsport-4Y4MGUNT1NG-CodeNection2026/tree/main/docs/prototype
 - **Ideation Mindmap:** https://github.com/fieqah-faisal/Pawsport-4Y4MGUNT1NG-CodeNection2026/tree/main/docs/ideation
 
