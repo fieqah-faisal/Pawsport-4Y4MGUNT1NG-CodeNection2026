@@ -109,19 +109,19 @@ This is the raw output of our first ideation meeting, covering audience, feature
 
 #### Problem Tree
 
-[Travel-planning problem tree](docs/ideation/problem-tree.png)
+![Travel-planning problem tree](docs/ideation/problem-tree.png)
 
 Five root causes feed the central problem: fragmented tools, conflicting preferences, unstructured inspiration, conditions that change after planning, and planning effort that falls on one or two people. The consequences branch upward into slow decisions, unfair compromises, budget overruns, inefficient routes and planning fatigue, and each of our core features is drawn back to the specific root it addresses rather than to the symptom.
 
 #### Primary User Flow
 
-[Primary user flow](docs/ideation/user-flow.png)
+![Primary user flow](docs/ideation/user-flow.png)
 
 The primary journey runs from opening the app through the solo-or-group decision, spoken consultation with the companion, Travel DNA creation, joining a trip, reviewing party compatibility, adding Quest Cards, voting, itinerary and budget generation, approval, and exploring the adventure map. The recovery path branches at disruption: a closure or weather event triggers a proposed replacement showing the cost and time difference, which the group confirms or rejects without disturbing the rest of the plan.
 
 #### Iteration 2 - Post-Mentor Refinement
 
-[Post-mentor product mindmap](docs/ideation/pawsport-mindmap-v2.png)
+![Post-mentor product mindmap](docs/ideation/pawsport-mindmap-v2.png)
 
 Three changes separate this map from the first. Spoken capture enters as a new branch, cross-linked to Travel DNA, the character system and the Gemini audio pipeline - the companion is now the microphone, which makes the character functional rather than decorative. Group handling moved from merging everyone's preferences to lowering the cost of contributing, following the observation that only one or two members of any group actually plan. And the content is now grouped and colour-coded - committed MVP, known risk, and a Dropped branch that keeps rejected directions visible rather than silently absent - which answers the density critique by making the shape legible rather than by deleting work.
 
@@ -379,8 +379,8 @@ project-root/
 ├── README.md
 ├── docs/
 │   ├── ideation/
-│   │   ├── mindmap-v1-pre-mentor.png
-│   │   ├── mindmap-v2-post-mentor.png
+│   │   ├── mindmap-v1-preMentor.png
+│   │   ├── pawsport-mindmap-v2.png
 │   │   ├── problem-tree.png
 │   │   └── user-flow.png
 │   ├── prototype/
@@ -395,9 +395,6 @@ project-root/
 │   │   └── screen-09-ai-compromise.png
 │   ├── architecture/
 │   │   └── system-architecture.png
-│   ├── research/
-│   │   ├── competitor-comparison.md
-│   │   └── user-feedback.md
 │   └── assets/
 │       └── CREDITS.md
 ├── presentation/
